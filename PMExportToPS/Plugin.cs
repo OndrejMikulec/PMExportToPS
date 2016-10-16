@@ -24,6 +24,9 @@
  * Plugin run:
  * 		Plugin {db6fda6f-c255-423c-93b1-a80001c9ce25} run
  * 
+ * * Surrogate connect:
+ * 		Plugin {db6fda6f-c255-423c-93b1-a80001c9ce25} debug
+ * 		Plugin {db6fda6f-c255-423c-93b1-a80001c9ce25} debugLoad
  * 
  */
 using System;
@@ -81,7 +84,7 @@ namespace PMExportToPS
 
 		public void PreInitialise(string locale)
 		{
-			throw new NotImplementedException();
+			
 		}
 
 		public void Initialise(string Token, PowerMILL.PluginServices pServices, int ParentWindow)
@@ -90,8 +93,9 @@ namespace PMExportToPS
 			m_services = pServices;
 			m_parent_window = ParentWindow;
 			
+			
 			MySerialization.Load(this);
-
+			
 		}
 
 		public void Uninitialise()
@@ -143,7 +147,18 @@ namespace PMExportToPS
 			if (Command.ToLower().Trim()=="run") {
 				DoWork();
 			}
-		}
+
+            if (Command.ToLower().Trim() == "debug")
+            {
+                System.Diagnostics.Debugger.Break();
+            }
+
+            if (Command.ToLower().Trim() == "debugload")
+            {
+                System.Diagnostics.Debugger.Break();
+                MySerialization.Load(this);
+            }
+        }
 		
 		async void DoWork()
 		{

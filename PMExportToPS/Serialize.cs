@@ -62,8 +62,8 @@ namespace PMExportToPS
 				plg.PathPS = oMainFormSerialize._psPath;
 				
 			
-			} catch (Exception) {
-				
+			} catch (Exception ex) {
+                MessageBox.Show(ex.Message);
 				setdefaultVal(plg);
 			}
 			
@@ -72,7 +72,7 @@ namespace PMExportToPS
 		
 		static void setdefaultVal(Plugin plg)
 		{
-            
+            plg.PathPS = "setdefaultVal"; //TODO
 		}
 
 

@@ -30,6 +30,7 @@ namespace PMExportToPS
 			InitializeComponent();
 			
 			label1.Text = plg.PathPS;
+			label2.Text = plg.SerializePath;
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
@@ -39,6 +40,10 @@ namespace PMExportToPS
 				_plg.PathPS = fl.FileName;
 				label1.Text = _plg.PathPS;
 			}
+		}
+		void Button2Click(object sender, EventArgs e)
+		{
+			Close();
 		}
 	}
 }
