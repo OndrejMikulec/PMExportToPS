@@ -33,6 +33,7 @@ using System.Drawing;
 using System.Xml;
 using System.Linq;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace PMExportToPS
 {
@@ -139,11 +140,22 @@ namespace PMExportToPS
 
 		public void ProcessCommand(string Command)
 		{
-			
 			if (Command.ToLower().Trim()=="run") {
+				DoWork();
+			}
+		}
+		
+		async void DoWork()
+		{
+			while (m_services.Busy) {
+				await Task.Delay(100);
+			}
+			
+			using (PMInteraction inter = new PMInteraction(m_token,m_services)) {
 				new DoWork(m_token,m_services,_pathPS);
 			}
 		}
+		
 
 		public string Name {
 			get {

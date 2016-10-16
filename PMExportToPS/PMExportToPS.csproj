@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>PMExportToPS</RootNamespace>
     <AssemblyName>PMExportToPS</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <NoWin32Manifest>False</NoWin32Manifest>
     <SignAssembly>False</SignAssembly>
@@ -19,6 +19,7 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -74,13 +75,13 @@
   <ItemGroup>
     <Compile Include="DoWork.cs" />
     <Compile Include="Gets.cs" />
+    <Compile Include="PMInteraction.cs" />
     <Compile Include="Serialize.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="Options.Designer.cs">
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugin.cs" />
-    <Compile Include="PMInteraction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinFormWrapper.cs" />
   </ItemGroup>
