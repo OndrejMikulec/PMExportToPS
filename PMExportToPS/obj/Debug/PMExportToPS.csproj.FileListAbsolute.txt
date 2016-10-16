@@ -1,0 +1,8 @@
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\bin\Debug\PMExportToPS.dll
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\bin\Debug\PMExportToPS.pdb
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\bin\Debug\PowerMILL.dll
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\obj\Debug\PMExportToPS.csprojResolveAssemblyReference.cache
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\obj\Debug\PMExportToPS.dll
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\obj\Debug\PMExportToPS.pdb
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\obj\Debug\PMExportToPS.Options.resources
+C:\Users\omiku\Documents\SharpDevelop Projects\PMExportToPS\PMExportToPS\obj\Debug\PMExportToPS.csproj.GenerateResource.Cache
